@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	position: relative;
+}
+
+.hamburger::before {
+	top: 10px;
+}
+
+.hamburger::after {
+	bottom: 10px;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	width: 32px;
+	height: 2px;
+	background: black;
+	display: block;
+	position: absolute;
+	/* transition: var(--transition-whoosh); */
+}
