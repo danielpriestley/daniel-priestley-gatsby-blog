@@ -59,7 +59,7 @@ typings/
 public
 
 # fonts
-src/fonts/
+*.otf
 
 # Mac files
 .DS_Store
