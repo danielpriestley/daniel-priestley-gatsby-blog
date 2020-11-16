@@ -9,12 +9,4 @@ const Logo = () => (
 	</Link>
 );
 
-const LogoAlt = () => (
-	<Link to="/">
-		<h1 class="leading-7 inline-block border-b-2 border-purple-600 text-base font-medium text-white">
-			<b>daniel</b>priestley
-		</h1>
-	</Link>
-);
-
 export default Logo;

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const Socials = () => (
 	<div class="flex items-center">
-		<a href="https://www.github.com/danielpriestley">
+		<a
+			class="text-gray-100 text-center leading-normal hover:text-purple-600"
+			href="https://www.github.com/danielpriestley"
+		>
 			<svg
-				class="mr-4 stroke-current text-gray-100"
+				class="mr-4 stroke-current"
 				xmlns="http://www.w3.org/2000/svg"
 				width="2rem"
 				height="1.9rem"
@@ -23,9 +25,12 @@ const Socials = () => (
 				/>
 			</svg>
 		</a>
-		<a href="/">
+		<a
+			class="text-gray-100 text-center leading-normal hover:text-purple-600"
+			href="https://www.linkedin.com/in/daniel-priestley-214982187/"
+		>
 			<svg
-				class="mr-4 stroke-current text-gray-100"
+				class="stroke-current"
 				xmlns="http://www.w3.org/2000/svg"
 				width="2rem"
 				height="2rem"
@@ -68,7 +73,7 @@ const Socials = () => (
 				</g>
 			</svg>
 		</a>
-		<a href="www.gia">
+		{/* <a class="">
 			<svg
 				class="mt-1 fill-current text-gray-100"
 				xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +95,7 @@ const Socials = () => (
 					/>
 				</g>
 			</svg>
-		</a>
+		</a> */}
 	</div>
 );
 

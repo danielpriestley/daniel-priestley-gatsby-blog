@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'CircularStd';
+	src: url('');
+}
+html {
+	background-color: #f7fafc;
+}
+
 .hamburger {
 	width: 32px;
 	height: 32px;
@@ -26,4 +34,8 @@
 	display: block;
 	position: absolute;
 	/* transition: var(--transition-whoosh); */
+}
+
+.blog-header {
+	font-family: 'Circular Std', 'Avenir Next', Helvetica Neue, Arial;
 }

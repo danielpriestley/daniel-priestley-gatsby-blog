@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 	return (
 		<div class="flex flex-col h-screen justify-between bg-gray-100">
 			<Header />
-			<div class="max-w-2xl mx-auto px-4 md:px-0">
+			<div class="max-w-2xl mx-auto px-4 md:px-0 ">
 				<main>{children}</main>
 			</div>
 			<Footer />

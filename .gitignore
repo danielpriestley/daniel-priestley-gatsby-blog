@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# fonts
+.src/fonts
+
 # Mac files
 .DS_Store
 
