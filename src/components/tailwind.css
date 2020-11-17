@@ -3,13 +3,15 @@
 a {
 	@apply text-purple-600;
 }
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
 	font-family: 'CircularStd';
-	src: url('');
+	src: local('Circular Std'), url(../fonts/circular-medium.otf) format('otf');
 }
+
+@tailwind components;
+@tailwind utilities;
+
 /* html {
 	background-color: #f7fafc;
 } */

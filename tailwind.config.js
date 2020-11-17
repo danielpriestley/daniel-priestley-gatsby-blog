@@ -18,7 +18,10 @@ module.exports = {
 			},
 			linearBorderGradients: (theme) => ({
 				colors: theme('colors')
-			})
+			}),
+			fontFamily: {
+				sans: [ 'Circular Std', 'Helvetica', 'Segoe UI', 'Arial', 'sans-serif' ]
+			}
 		},
 		screens: {
 			sm: '640px',

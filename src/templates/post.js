@@ -32,9 +32,9 @@ const Post = ({ data }) => {
 					{children}
 				</p>
 			),
-			[BLOCKS.HEADING_1]: (node, children) => <h1 class="text-2xl mt-10 mb-2">{children}</h1>,
+			[BLOCKS.HEADING_1]: (node, children) => <h1 class="text-2xl mt-10 mb-2 font-sans">{children}</h1>,
 			[BLOCKS.HEADING_2]: (node, children) => (
-				<h2 class="text-2xl text-indigo-1000 font-semibold mt-10 mb-2">{children}</h2>
+				<h2 class="text-2xl text-indigo-1000 font-semibold mt-10 mb-2 font-sans">{children}</h2>
 			),
 			[INLINES.ENTRY_HYPERLINK]: (node, children) => {
 				return <Hyperlink>{children}</Hyperlink>;
@@ -77,14 +77,14 @@ const Post = ({ data }) => {
 			<SEO title="Blog" />
 
 			<div class="mb-24">
-				<h2 class="text-gray-500 text-sm">{data.post.postDate}</h2>
+				<h2 class="text-gray-500 text-sm font-sans">{data.post.postDate}</h2>
 				<a
-					class="block text-purple-600 text-sm mb-8"
+					class="block text-purple-600 font-sans text-sm mb-8"
 					href="https://www.linkedin.com/in/daniel-priestley-214982187/"
 				>
 					{data.post.author.authorName}
 				</a>
-				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-medium leading-none blog-header mb-6">
+				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-medium font-sans leading-none blog-header mb-6">
 					{data.post.postTitle}
 				</h1>
 				<hr />
@@ -97,7 +97,7 @@ const Post = ({ data }) => {
 					<img class="p-10 mt-10 mb-10  w-auto" src={data.post.postImage2.file.url} alt="way" />
 				)}
 				{documentToReactComponents(document2, options)}
-				<p class="text-xs mb-16 font-display text-gray-700">
+				<p class="text-xs mb-16 font-sans text-gray-700">
 					All images used are royalty free from <a href="https://undraw.co">Undraw.co</a>
 				</p>
 				<Link to="/">

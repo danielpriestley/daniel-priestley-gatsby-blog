@@ -10,10 +10,10 @@ const BlogCard = ({ data }) => (
 			>
 				<div class="h-full md:w-2/3">
 					<p class="text-gray-500 text-xs mb-1">{data.postDate}</p>
-					<h1 class="font-medium text-2xl leading-6 md:leading-8 md:mb-0 mb-1 md:text-xl">
+					<h1 class="font-medium font-sans text-2xl leading-6 md:leading-8 md:mb-0 mb-1 md:text-xl">
 						{data.postTitle}
 					</h1>
-					<h2 class="mb-2 md:mb-3 text-purple-600 text-sm">{data.author.authorName}</h2>
+					<h2 class="mb-2 md:mb-3 font-sans text-purple-600 text-sm">{data.author.authorName}</h2>
 					<p class="font-body text-gray-700 md:w-3/4">{data.previewText}</p>
 				</div>
 
