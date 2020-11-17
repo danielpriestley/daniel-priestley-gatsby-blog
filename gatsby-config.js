@@ -12,6 +12,7 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 
 		`gatsby-transformer-sharp`,
+
 		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-source-contentful`,
@@ -28,7 +29,8 @@ module.exports = {
 				start_url: `/blog`,
 				background_color: `#663399`,
 				theme_color: `#663399`,
-				display: `minimal-ui`
+				display: `minimal-ui`,
+				icon: `src/images/dplogo.png`
 			}
 		},
 		{
