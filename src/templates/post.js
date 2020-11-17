@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import SEO from '../components/seo';
+
 import Layout from '.././components/layout';
 import TextButton from '.././components/text-button';
 
@@ -72,6 +74,8 @@ const Post = ({ data }) => {
 	};
 	return (
 		<Layout>
+			<SEO title="Blog" />
+
 			<div class="mb-24">
 				<h2 class="text-gray-500 text-sm">{data.post.postDate}</h2>
 				<a
