@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -8,8 +8,9 @@ import BlogCard from '.././components/blog-card';
 const IndexPage = ({ data }) => (
 	<Layout>
 		<SEO title="Home" />
-		<h1 class="text-4xl font-medium mb-6">Blog Posts</h1>
-		<div class="flex flex-wrap content-between">
+		<h1 class="text-4xl font-medium mb-4 text-indigo-1000">Blog Posts</h1>
+		<hr class="mb-8" />
+		<div class="">
 			{data.allContentfulBlogPost.edges.map(({ node }) => (
 				// <div key={node.id}>
 				// 	<Link to={`/blog/posts/${node.slug}`}>
@@ -19,8 +20,6 @@ const IndexPage = ({ data }) => (
 				<BlogCard data={node} />
 			))}
 		</div>
-		<Link to="/page-2/">Go to page 2</Link> <br />
-		<Link to="/using-typescript/">Go to "Using TypeScript"</Link>
 	</Layout>
 );
 
@@ -30,7 +29,7 @@ export const query = graphql`
 			edges {
 				node {
 					postTitle
-					postDate
+					postDate(formatString: "DD MMMM, YYYY")
 					postImage {
 						file {
 							url
@@ -39,6 +38,7 @@ export const query = graphql`
 					author {
 						authorName
 					}
+					previewText
 					slug
 					id
 				}

@@ -1,4 +1,8 @@
 @tailwind base;
+
+a {
+	@apply text-purple-600;
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -6,15 +10,23 @@
 	font-family: 'CircularStd';
 	src: url('');
 }
-html {
+/* html {
 	background-color: #f7fafc;
-}
+} */
 
 .hamburger {
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
 	position: relative;
+}
+
+.darksocials {
+	stroke: black !important;
+}
+
+.bigquote {
+	font-size: 2.4rem !important;
 }
 
 .hamburger::before {
@@ -37,5 +49,10 @@ html {
 }
 
 .blog-header {
+	font-family: 'Circular Std', 'Avenir Next', Helvetica Neue, Arial;
+}
+
+h1,
+h2 {
 	font-family: 'Circular Std', 'Avenir Next', Helvetica Neue, Arial;
 }

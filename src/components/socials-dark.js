@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Socials = () => (
-	<div class="flex items-center">
+const SocialsDark = () => (
+	<div class="flex items-end">
 		<a
-			class="text-gray-100 text-center leading-normal hover:text-purple-600"
+			class="text-indigo-1000 text-center leading-normal hover:text-purple-600"
 			href="https://www.github.com/danielpriestley"
 		>
 			<svg
@@ -26,7 +26,7 @@ const Socials = () => (
 			</svg>
 		</a>
 		<a
-			class="text-gray-100 text-center leading-normal hover:text-purple-600"
+			class="text-indigo-1000 text-center leading-normal hover:text-purple-600"
 			href="https://www.linkedin.com/in/daniel-priestley-214982187/"
 		>
 			<svg
@@ -99,4 +99,4 @@ const Socials = () => (
 	</div>
 );
 
-export default Socials;
+export default SocialsDark;
