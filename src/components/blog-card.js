@@ -14,7 +14,7 @@ const BlogCard = ({ data }) => (
 						{data.postTitle}
 					</h1>
 					<h2 class="mb-2 md:mb-3 font-sans text-purple-600 text-sm">{data.author.authorName}</h2>
-					<p class="font-serif text-gray-700 md:w-3/4">{data.previewText}</p>
+					<p class="font-sans text-gray-700 md:w-3/4">{data.previewText}</p>
 				</div>
 
 				{/* this will prevent image loading on mobile */}
