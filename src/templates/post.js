@@ -70,7 +70,7 @@ const Post = ({ data }) => {
 
 				return (
 					<blockquote class="flex flex-col mt-20 mb-20 justify-between border-l-4 pl-4 md:pl-12 border-purple-600 ">
-						<quote class="mb-3 font-body leading-10 text-indigo-1000 italic text-3xl md:text-4xl">
+						<quote class="mb-3 font-body leading-snug text-indigo-1000 italic text-3xl md:text-3xl">
 							{UnTaggedChildren}
 						</quote>
 						<span class="text-gray-500 font-display"> - {data.post.quoteAuthor.quoteAuthorName}</span>
@@ -85,7 +85,7 @@ const Post = ({ data }) => {
 					}
 				});
 
-				return <ul class="ml-4 leading-9 text-1xl list-disc">{UnTaggedChildren}</ul>;
+				return <ul class="ml-4 leading-9 text-lg list-disc">{UnTaggedChildren}</ul>;
 			}
 
 			// [BLOCKS.EMBEDDED_ASSET]: (node, children) => <img src={children} alt="jay" />
@@ -103,7 +103,7 @@ const Post = ({ data }) => {
 				>
 					{data.post.author.authorName}
 				</a>
-				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-semibold font-sans leading-none blog-header mb-6">
+				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-semibold font-sans leading-snug blog-header mb-6">
 					{data.post.postTitle}
 				</h1>
 				<hr />
