@@ -50,9 +50,7 @@ const Post = ({ data }) => {
 			},
 
 			[BLOCKS.PARAGRAPH]: (node, children) => (
-				<p class="text-gray-1000 text-lg md:text-lg leading-7 font-light tracking-wide font-sans mb-4">
-					{children}
-				</p>
+				<p class="text-gray-900 text-lg md:text-lg leading-7 font-light font-sans mb-4">{children}</p>
 			),
 			// [BLOCKS.QUOTE]: (node, children) => (
 			// 	<blockquote class="border-l-4 p-2 border-purple-600 hover:border-gray-400">
@@ -85,7 +83,7 @@ const Post = ({ data }) => {
 					}
 				});
 
-				return <ul class="ml-4 leading-9 text-lg list-disc">{UnTaggedChildren}</ul>;
+				return <ul class="mt-8 font-light text-gray-900 leading-9 text-lg list-disc">{UnTaggedChildren}</ul>;
 			}
 
 			// [BLOCKS.EMBEDDED_ASSET]: (node, children) => <img src={children} alt="jay" />
