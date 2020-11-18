@@ -1,9 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
 	future: {
 		// removeDeprecatedGapUtilities: true,
 		// purgeLayersByDefault: true,
 	},
-	purge: [ './src/**/*.html', './src/**/*.js', './src/**/*.jsx' ],
+	purge: [],
 	theme: {
 		extend: {
 			colors: {
@@ -20,7 +22,8 @@ module.exports = {
 				colors: theme('colors')
 			}),
 			fontFamily: {
-				sans: [ 'Circular Std', 'Helvetica', 'Segoe UI', 'Arial', 'sans-serif' ]
+				sans: [ 'Poppins', ...defaultTheme.fontFamily.sans ],
+				serif: [ 'Playfair Display', ...defaultTheme.fontFamily.serif ]
 			}
 		},
 		screens: {
@@ -35,12 +38,8 @@ module.exports = {
 
 			xl: '1280px'
 			// => @media (min-width: 1280px) { ... }
-		},
-		fontFamily: {
-			display: [ '"Circular Std"' ],
-			body: [ '"Times New Roman"' ]
 		}
 	},
 	variants: {},
-	plugins: [ require('tailwindcss-border-gradients')() ]
+	plugins: []
 };

@@ -4,12 +4,6 @@ a {
 	@apply text-purple-600;
 }
 
-@font-face {
-	font-family: 'Circular Std';
-
-	src: local('Circular Std'), url(../fonts/circular-medium.otf) format('otf');
-}
-
 @tailwind components;
 @tailwind utilities;
 
@@ -19,7 +13,7 @@ a {
 
 .hamburger {
 	width: 32px;
-	height: 31px;
+	height: 32px;
 	cursor: pointer;
 	position: relative;
 }
@@ -49,13 +43,4 @@ a {
 	display: block;
 	position: absolute;
 	/* transition: var(--transition-whoosh); */
-}
-
-.blog-header {
-	font-family: 'Circular Std', 'Avenir Next', Helvetica Neue, Arial;
-}
-
-h1,
-h2 {
-	font-family: 'Circular Std', 'Avenir Next', Helvetica Neue, Arial;
 }

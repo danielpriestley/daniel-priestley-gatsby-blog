@@ -43,7 +43,7 @@ const Post = ({ data }) => {
 			[BLOCKS.HR]: (node, children) => <hr class="mb-10 mt-10" />,
 
 			[BLOCKS.PARAGRAPH]: (node, children) => (
-				<p class="text-gray-900 text-lg md:text-xl font-body mb-4">{children}</p>
+				<p class="text-gray-900 text-lg md:text-lg  font-serif mb-4">{children}</p>
 			),
 			// [BLOCKS.QUOTE]: (node, children) => (
 			// 	<blockquote class="border-l-4 p-2 border-purple-600 hover:border-gray-400">
@@ -84,7 +84,7 @@ const Post = ({ data }) => {
 				>
 					{data.post.author.authorName}
 				</a>
-				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-medium font-sans leading-none blog-header mb-6">
+				<h1 class="text-4xl md:text-5xl max-w-xl text-indigo-1000 font-semibold font-sans leading-none blog-header mb-6">
 					{data.post.postTitle}
 				</h1>
 				<hr />

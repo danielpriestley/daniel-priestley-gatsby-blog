@@ -8,14 +8,14 @@ const Footer = () => (
 			<div class="flex flex-col md:flex-row  md:items-center mb-6 justify-between">
 				<ul class="mb-6 md:mb-0 flex flex-row items-center">
 					<Link to="/">
-						<li class="font-sans block font-bold border-b-2 border-purple-600 text-gray-100 hover:text-gray-200 hover:border-purple-100 mr-4 cursor-pointer">
+						<li class="font-sans block font-semibold border-b-2 border-purple-600 text-gray-100 hover:text-gray-200 hover:border-purple-100 mr-4 cursor-pointer">
 							Home
 						</li>
 					</Link>
 
 					<a
 						href="https://github.com/danielpriestley"
-						class="font-sans font-bold border-b-2 border-purple-600 cursor-pointer text-gray-100 hover:text-gray-200 hover:border-purple-100"
+						class="font-sans font-semibold border-b-2 border-purple-600 cursor-pointer text-gray-100 hover:text-gray-200 hover:border-purple-100"
 					>
 						Portfolio
 					</a>
