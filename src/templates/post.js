@@ -41,6 +41,13 @@ const Post = ({ data }) => {
 			},
 
 			[BLOCKS.HR]: (node, children) => <hr class="mb-10 mt-10" />,
+			[BLOCKS.UL_LIST]: (node, children) => {
+				return (
+					<ul>
+						<li>{children}</li>
+					</ul>
+				);
+			},
 
 			[BLOCKS.PARAGRAPH]: (node, children) => (
 				<p class="text-gray-1000 text-lg md:text-lg leading-7 font-light tracking-wide font-sans mb-4">
@@ -69,6 +76,16 @@ const Post = ({ data }) => {
 						<span class="text-gray-500 font-display"> - {data.post.quoteAuthor.quoteAuthorName}</span>
 					</blockquote>
 				);
+			},
+
+			[BLOCKS.UL_LIST]: (node, children) => {
+				const UnTaggedChildren = documentToReactComponents(node, {
+					renderNode: {
+						[BLOCKS.UL_LIST]: (node, children) => children
+					}
+				});
+
+				return <ul class="ml-4 leading-9 text-1xl list-disc">{UnTaggedChildren}</ul>;
 			}
 
 			// [BLOCKS.EMBEDDED_ASSET]: (node, children) => <img src={children} alt="jay" />
