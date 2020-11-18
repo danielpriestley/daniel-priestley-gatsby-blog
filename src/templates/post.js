@@ -43,7 +43,7 @@ const Post = ({ data }) => {
 			[BLOCKS.HR]: (node, children) => <hr class="mb-10 mt-10" />,
 
 			[BLOCKS.PARAGRAPH]: (node, children) => (
-				<p class="text-gray-900 text-lg md:text-lg  font-serif mb-4">{children}</p>
+				<p class="text-gray-1000 text-lg md:text-lg leading-8 tracking-wide font-serif mb-4">{children}</p>
 			),
 			// [BLOCKS.QUOTE]: (node, children) => (
 			// 	<blockquote class="border-l-4 p-2 border-purple-600 hover:border-gray-400">
