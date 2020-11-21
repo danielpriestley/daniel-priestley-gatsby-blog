@@ -83,7 +83,7 @@ const Post = ({ data }) => {
 					}
 				});
 
-				return <ul class="mt-8 font-light text-gray-900 leading-9 text-lg list-disc">{UnTaggedChildren}</ul>;
+				return <ul class="mt-8 font-light text-gray-900 leading-9 text-lg">{UnTaggedChildren}</ul>;
 			}
 
 			// [BLOCKS.EMBEDDED_ASSET]: (node, children) => <img src={children} alt="jay" />
